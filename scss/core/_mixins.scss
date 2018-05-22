@@ -241,6 +241,37 @@
   }
 }
 
+// Make flat button
+@mixin make-flat-button ($name, $color) {
+  .btn-flat-#{$name} {
+    background-color: transparent !important;
+    color: $color !important;
+    box-shadow: none;
+    &:hover,
+    &:focus,
+    &:active,
+    &:active:focus,
+    &.active {
+      border-color: $color !important;
+      background-color: transparent !important;
+      color: $color !important;
+      box-shadow: none;
+    }
+    &:not([disabled]):not(.disabled):active,
+    &:not([disabled]):not(.disabled).active,
+    .show > &.dropdown-toggle {
+      box-shadow: none;
+      background-color: transparent !important;
+      border-color: $color !important;
+    }
+    &:not([disabled]):not(.disabled):active:focus,
+    &:not([disabled]):not(.disabled).active:focus,
+    .show > &.dropdown-toggle:focus {
+      box-shadow: none;
+    }
+  }
+}
+
 // Make gradient
 @mixin make-gradient($name, $value) {
   .#{$name}-gradient {

@@ -107,4 +107,5 @@
 @each $btn_name, $color_value in $mdb-colors {
   @include make-button($btn_name, $color_value);
   @include make-outline-button($btn_name, $color_value);
+  @include make-flat-button($btn_name, $color_value);
 }
