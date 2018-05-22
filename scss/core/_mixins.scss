@@ -246,6 +246,8 @@
   .btn-flat-#{$name} {
     background-color: transparent !important;
     color: $color !important;
+    font-weight: 500 !important;
+    transition: background-color 75ms linear !important;
     box-shadow: none;
     &:hover,
     &:focus,
@@ -268,6 +270,9 @@
     &:not([disabled]):not(.disabled).active:focus,
     .show > &.dropdown-toggle:focus {
       box-shadow: none;
+    }
+    &:disabled {
+      color: #757575 !important;
     }
   }
 }
