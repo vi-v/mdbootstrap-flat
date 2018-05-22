@@ -137,30 +137,26 @@
   }
 }
 
-// Make different levels of colored shadows
-@function make-colored-shadow-1 ($color) {
-  $shadow:  $z-depth-1-spread rgba( darken( $color, 15% ), .33 ) !default;
-  @return $shadow;
-}
-@function make-colored-shadow-1-half ($color) {
-  $shadow:  $z-depth-1-half-spread rgba(darken( $color, 15% ), .33 ) !default;
-  @return $shadow;
-}
-@function make-colored-shadow-2 ($color) {
-  $shadow:  $z-depth-2-spread rgba( darken( $color, 15% ), .33 ) !default;
-  @return $shadow;
-}
-@function make-colored-shadow-3 ($color) {
-  $shadow:  $z-depth-3-spread rgba( darken( $color, 15% ), .33 ) !default;
-  @return $shadow;
-}
-@function make-colored-shadow-4 ($color) {
-  $shadow:  $z-depth-4-spread rgba( darken( $color, 15% ), .33 ) !default;
-  @return $shadow;
-}
-@function make-colored-shadow-5 ($color) {
-  $shadow:  $z-depth-5-spread rgba( darken( $color, 15% ), .33 ) !default;
-  @return $shadow;
+// Make shadows
+@mixin make-shadows ($name, $color) {
+  .z-depth-1-#{$name} {
+    box-shadow: make-colored-shadow-1($color) !important;
+  }
+  .z-depth-1-half-#{$name} {
+    box-shadow: make-colored-shadow-1-half($color) !important;
+  }
+  .z-depth-2-#{$name} {
+    box-shadow: make-colored-shadow-2($color) !important;
+  }
+  .z-depth-3-#{$name} {
+    box-shadow: make-colored-shadow-3($color) !important;
+  }
+  .z-depth-4-#{$name} {
+    box-shadow: make-colored-shadow-4($color) !important;
+  }
+  .z-depth-5-#{$name} {
+    box-shadow: make-colored-shadow-5($color) !important;
+  }
 }
 
 // Make button
