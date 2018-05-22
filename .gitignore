@@ -1,2 +1,3 @@
 .git
 *.css.map
+.sass-cache/
