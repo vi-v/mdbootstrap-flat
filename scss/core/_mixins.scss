@@ -181,7 +181,7 @@
     &:focus,
     &:active,
     &.active {
-      background-color: darken($color, 20%);
+      background-color: darken($color, 10%);
     }
     &.dropdown-toggle {
       background-color: $color!important;
@@ -194,7 +194,7 @@
     &:not([disabled]):not(.disabled).active,
     .show > &.dropdown-toggle {
       box-shadow: make-colored-shadow-1-half($color);
-      background-color: darken($color, 20%) !important;
+      background-color: darken($color, 10%) !important;
     }
     &:not([disabled]):not(.disabled):active:focus,
     &:not([disabled]):not(.disabled).active:focus,
