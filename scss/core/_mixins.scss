@@ -140,22 +140,22 @@
 // Make shadows
 @mixin make-shadows ($name, $color) {
   .z-depth-1-#{$name} {
-    box-shadow: make-colored-shadow-1($color) !important;
+    box-shadow: make-colored-shadow-1($color, 0.22) !important;
   }
   .z-depth-1-half-#{$name} {
-    box-shadow: make-colored-shadow-1-half($color) !important;
+    box-shadow: make-colored-shadow-1-half($color, 0.22) !important;
   }
   .z-depth-2-#{$name} {
-    box-shadow: make-colored-shadow-2($color) !important;
+    box-shadow: make-colored-shadow-2($color, 0.22) !important;
   }
   .z-depth-3-#{$name} {
-    box-shadow: make-colored-shadow-3($color) !important;
+    box-shadow: make-colored-shadow-3($color, 0.22) !important;
   }
   .z-depth-4-#{$name} {
-    box-shadow: make-colored-shadow-4($color) !important;
+    box-shadow: make-colored-shadow-4($color, 0.22) !important;
   }
   .z-depth-5-#{$name} {
-    box-shadow: make-colored-shadow-5($color) !important;
+    box-shadow: make-colored-shadow-5($color, 0.22) !important;
   }
 }
 
