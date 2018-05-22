@@ -53,12 +53,18 @@
   font-weight: 700;
 }
 
+@font-face {
+  font-family: 'Raleway', sans-serif;
+  src: url('https://fonts.googleapis.com/css?family=Raleway:200,300,400,500,700');
+}
+
 body {
   font-family: "Roboto", sans-serif;
   font-weight: 300;
 }
 
 h1, h2, h3, h4, h5, h6 {
+  font-family: "Raleway", sans-serif !important;
   font-weight: 300;
 }
 
