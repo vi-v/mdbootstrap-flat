@@ -53,9 +53,35 @@
   font-weight: 700;
 }
 
+// Tajawal FONT
 @font-face {
-  font-family: 'Raleway', sans-serif;
-  src: url('https://fonts.googleapis.com/css?family=Raleway:200,300,400,500,700');
+  font-family: "Tajawal";
+  src: url("#{$tajawal-font-path}Tajawal-ExtraLight.ttf") format("truetype");
+  font-weight: 200;
+}
+
+@font-face {
+  font-family: "Tajawal";
+  src: url("#{$tajawal-font-path}Tajawal-Light.ttf") format("truetype");
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: "Tajawal";
+  src: url("#{$tajawal-font-path}Tajawal-Regular.ttf") format("truetype");
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "Tajawal";
+  src: url("#{$tajawal-font-path}Tajawal-Medium.ttf") format("truetype");
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: "Tajawal";
+  src: url("#{$tajawal-font-path}Tajawal-Bold.ttf") format("truetype");
+  font-weight: 700;
 }
 
 body {
@@ -64,7 +90,7 @@ body {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: "Raleway", sans-serif !important;
+  font-family: "Tajawal", sans-serif !important;
   font-weight: 300;
 }
 
