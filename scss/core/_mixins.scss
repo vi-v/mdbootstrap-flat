@@ -239,6 +239,10 @@
     .show > &.dropdown-toggle:focus {
       box-shadow: make-colored-shadow-1-half($color);
     }
+    &:disabled {
+      color: #9E9E9E !important;
+      border: 2px solid #9E9E9E !important;
+    }
   }
 }
 
@@ -256,7 +260,7 @@
     &:active:focus,
     &.active {
       border-color: $color !important;
-      background-color: rgba( darken($color, 20%), 0.12 ) !important;
+      background-color: rgba( $color, 0.11 ) !important;
       color: $color !important;
       box-shadow: none;
     }
@@ -264,7 +268,7 @@
     &:not([disabled]):not(.disabled).active,
     .show > &.dropdown-toggle {
       box-shadow: none;
-      background-color: rgba( darken($color, 20%), 0.15 ) !important;
+      background-color: rgba( $color, 0.13 ) !important;
       border-color: $color !important;
     }
     &:not([disabled]):not(.disabled):active:focus,
