@@ -65,12 +65,12 @@ $z-depth-3-spread:          0 0.9rem 3.25rem;
 $z-depth-4-spread:          0 1.15rem 4rem;
 $z-depth-5-spread:          0 1.4rem 4.75rem;
 
-$z-depth-1:          $z-depth-1-spread rgba( #000, .22 ) !default;
-$z-depth-1-half:     $z-depth-1-half-spread rgba( #000, .22 ) !default;
-$z-depth-2:          $z-depth-2-spread rgba( #000, .22 ) !default;
-$z-depth-3:          $z-depth-3-spread rgba( #000, .22 ) !default;
-$z-depth-4:          $z-depth-4-spread rgba( #000, .22 ) !default;
-$z-depth-5:          $z-depth-5-spread rgba( #000, .22 ) !default;
+$z-depth-1:          $z-depth-1-spread rgba( #000, .15 ) !default;
+$z-depth-1-half:     $z-depth-1-half-spread rgba( #000, .15 ) !default;
+$z-depth-2:          $z-depth-2-spread rgba( #000, .15 ) !default;
+$z-depth-3:          $z-depth-3-spread rgba( #000, .15 ) !default;
+$z-depth-4:          $z-depth-4-spread rgba( #000, .15 ) !default;
+$z-depth-5:          $z-depth-5-spread rgba( #000, .15 ) !default;
 
 // Transitions
 $transition-basic:            all .2s ease-in-out !default;
@@ -103,10 +103,6 @@ $btn-outline-padding-y-basic:         .56rem !default;
 $btn-outline-padding-y-large:         .704rem !default;
 $btn-outline-padding-y-medium:        .464rem !default;
 $btn-outline-padding-y-small:         .304rem !default;
-// $btn-outline-padding-y-basic:         .7rem !default;
-// $btn-outline-padding-y-large:         .88rem !default;
-// $btn-outline-padding-y-medium:        .58rem !default;
-// $btn-outline-padding-y-small:         .38rem !default;
 
 $btn-tb-padding-y:       0.3rem !default;
 $btn-tb-padding-x:       1rem !default;
