@@ -197,6 +197,11 @@
     .show > &.dropdown-toggle:focus {
       box-shadow: make-colored-shadow-1-half($color);
     }
+    &:disabled {
+      background-color: #E0E0E0 !important;
+      color: #616161 !important;
+      box-shadow: $z-depth-1;
+    }
   }
   .#{$name}-ic {
     color: $color !important;
